@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Faz3a</title>
+    <title>Gradient Background with Navbar</title>
+
+    <!-- Link to Luckiest Guy font -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- Link to Feeling Passionate font -->
+    <link href="https://fonts.googleapis.com/css2?family=Feeling+Passionate&display=swap" rel="stylesheet">
+
     <style>
         @font-face {
             font-family: 'Canva Sans';
@@ -73,6 +80,11 @@
             font-size: 18px;
             font-family: 'Luckiest Guy', Arial, sans-serif;
             text-shadow: -1px -1px 0 #3d2272, 1px 1px 0 #3d2272;
+        }
+
+        /* Active link color */
+        nav ul li a.active {
+            color: #5fd3c8;
         }
 
         nav ul li a:hover {
@@ -170,13 +182,11 @@
             max-width: 60%;
         }
 
-        /* Styling for the hashtag image */
         .hashtag-image {
             margin-left: 3%;
             margin-top: 0%;
             max-width: 60%;
             margin-bottom: 2%;
-            /* width: 150%; */
         }
 
         .user-icon {
@@ -185,41 +195,37 @@
             margin-right: 15%;
         }
 
-        /* Add the phone image fixed on the right side of the content */
         .phone-image {
             position: fixed;
             right: 5%;
             top: 20%;
-            /* width: 120px; */
             height: 75%;
             z-index: 100;
         }
 
-        /* Stop the phone image when reaching the footer */
         footer {
             position: relative;
             z-index: 10;
         }
     </style>
-
-
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <nav>
         <img src="https://i.postimg.cc/CLwvYL6J/logo.png" alt="Logo">
         <div class="nav-center">
             <ul>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">MEET THE TEAM</a></li>
-                <li><a href="#">OUR APP</a></li>
+                <li><a href="#" class="nav-link active">ABOUT US</a></li>
+                <li><a href="#" class="nav-link">EVENTS</a></li>
+                <li><a href="#" class="nav-link">MEET THE TEAM</a></li>
+                <li><a href="#" class="nav-link">OUR APP</a></li>
             </ul>
         </div>
         <img src="https://i.postimg.cc/C5nwxs1T/user.png" alt="User Icon" class="user-icon">
     </nav>
 
-
+    <!-- Main content area -->
     <div class="content">
         <h1 class="welcome-text">Welcome to</h1>
         <img src="https://i.postimg.cc/63r1B7V6/name.png" alt="Welcome Image">
@@ -227,11 +233,9 @@
             FAZ3A is a student-led non-profit organization. Here at FAZ3A, we are dedicated to breaking educational
             barriers and uniting students from all backgrounds and cultures.
         </p>
-        <!-- Hashtag image added below the description -->
     </div>
     <img src="https://i.postimg.cc/056h6Q8f/hashtag.png" alt="Hashtag Image" class="hashtag-image">
 
-    <!-- Phone Image -->
     <img src="https://i.postimg.cc/xCpNJ536/phone.png" alt="Phone Icon" class="phone-image">
 
     <!-- Footer -->
@@ -251,6 +255,22 @@
         </div>
     </footer>
 
+    <!-- JavaScript to handle navbar click events -->
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Loop through each link and add click event listener
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // Remove the active class from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+
+                // Add the active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
