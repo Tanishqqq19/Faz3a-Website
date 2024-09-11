@@ -97,3 +97,35 @@ nav ul li a:hover {
     max-width: 80%;
     height: 70%;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    /* Adjust this value as needed */
+}
+
+.image-container img {
+    width: 150px;
+    /* Set the width as per your requirement */
+    height: 150;
+    margin: 0 10px;
+
+    /* Add spacing between images */
+}
+
+.team-member-name {
+    font-family: 'League Spartan', sans-serif;
+    color: #fffef4;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.team-member-title {
+    font-family: 'League Spartan', sans-serif;
+    color: #f8ee8f;
+    font-size: 18px;
+    margin-top: 5px;
+}
