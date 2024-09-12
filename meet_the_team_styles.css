@@ -9,13 +9,11 @@ body {
         radial-gradient(circle at top left, rgba(255, 0, 150, 0.5), transparent 20%),
         radial-gradient(circle at bottom right, rgba(255, 0, 150, 0.5), transparent 20%),
         linear-gradient(135deg, #16152a, #261454);
-
     background-size: cover;
     background-attachment: fixed;
 }
 
-html,
-body {
+html, body {
     overflow-x: hidden;
 }
 
@@ -90,7 +88,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    /* Adjust this value to match the height of your navigation bar */
 }
 
 .header-image img {
@@ -98,34 +95,44 @@ nav ul li a:hover {
     height: 70%;
 }
 
-.image-container {
+/* Add this to make the containers display side by side */
+.team-section {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    display: inline-flex;
+    margin: 0 10px; /* Adds spacing between the two images */
+    position: relative;
+    justify-content: center;
     align-items: center;
-    margin-top: 5px;
-    /* Adjust this value as needed */
 }
 
 .image-container img {
-    width: 150px;
-    /* Set the width as per your requirement */
-    height: 150;
-    margin: 0 10px;
+    width: 200px;
+    height: auto;
+}
 
-    /* Add spacing between images */
+.team-member-info {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
 }
 
 .team-member-name {
-    font-family: 'League Spartan', sans-serif;
-    color: #fffef4;
-    font-size: 24px;
+    font-size: 28px;
     text-transform: uppercase;
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .team-member-title {
-    font-family: 'League Spartan', sans-serif;
+    font-size: 22px;
     color: #f8ee8f;
-    font-size: 18px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
