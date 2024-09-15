@@ -88,6 +88,26 @@ nav ul li a:hover {
     padding-left: 5%;
 }
 
+
+.below-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5%;
+    /* Adjust spacing between elements */
+}
+
+.below-content img {
+    max-width: 30%;
+    /* Adjust the size as needed */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
 h1 {
     text-shadow: -1px -1px 0 #16152a, 1px 1px 0 #16152a;
 }
