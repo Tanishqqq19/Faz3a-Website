@@ -211,14 +211,23 @@ footer {
     margin-right: 15%;
 }
 
-.phone-image {
-    position: fixed;
-    right: 5%;
-    top: 10%;
+.fixed-container {
+    /* margin-bottom: -35%; */
+    margin-left: 80%;
+    left: 95%;
+    /* Adjust the right position as needed */
     height: 75%;
-    z-index: 100;
-    pointer-events: none;
+    /* Prevents interaction with the container */
 }
+
+.phone-image {
+    margin-left: 5%;
+    height: 500px;
+    /* Make the image take up the full height of the container */
+    width: auto;
+    /* Maintain the aspect ratio */
+}
+
 
 footer {
     position: relative;
