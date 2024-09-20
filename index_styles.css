@@ -77,17 +77,38 @@ nav ul li a:hover {
 .content {
     margin-top: 1.5%;
     padding-top: 60px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    flex: 1;
     background: linear-gradient(135deg, #16152a, #261454);
-    background-size: cover;
-    background-attachment: fixed;
     padding-left: 5%;
 }
 
+/* Flex container for "Welcome to" and phone image */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.welcome-text {
+    font-family: 'Feeling Passionate', cursive;
+    font-size: 95px;
+    text-align: left;
+    margin: 0;
+}
+
+.phone-image {
+    top: 5%;
+    max-width: 200px;
+    height: auto;
+    margin-left: 50%;
+    /* margin-top: 15%; */
+}
+
+.welcome-image {
+    max-width: 30%;
+    height: auto;
+    /* margin-left: 5%; */
+    margin-top: -40%;
+}
 
 .below-content {
     display: inline-flex;
@@ -171,19 +192,12 @@ footer {
     color: white;
 }
 
-.welcome-text {
-    font-family: 'Feeling Passionate', cursive;
-    font-size: 95px;
-    text-align: left;
-    margin: 0;
-}
-
-.content img {
+/* .welcome-image {
     max-width: 30%;
     height: auto;
     margin-top: -25px;
     margin-left: -25px;
-}
+} */
 
 .faz3a-description {
     font-family: 'League Spartan', sans-serif;
@@ -209,23 +223,6 @@ footer {
     height: 50px;
     width: auto;
     margin-right: 15%;
-}
-
-.fixed-container {
-    /* margin-bottom: -35%; */
-    margin-left: 80%;
-    left: 95%;
-    /* Adjust the right position as needed */
-    height: 75%;
-    /* Prevents interaction with the container */
-}
-
-.phone-image {
-    margin-left: 5%;
-    height: 500px;
-    /* Make the image take up the full height of the container */
-    width: auto;
-    /* Maintain the aspect ratio */
 }
 
 
