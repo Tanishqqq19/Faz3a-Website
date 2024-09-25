@@ -234,3 +234,14 @@ footer {
     position: relative;
     z-index: 10;
 }
+
+.message-from-founders {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f9447f; /* Ensure this is the correct color */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+}
