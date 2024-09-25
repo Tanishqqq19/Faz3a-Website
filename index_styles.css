@@ -34,6 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100; /* Ensures the navbar is on top */
 }
 
 nav img {
@@ -83,34 +84,38 @@ nav ul li a:hover {
 
 /* Flex container for "Welcome to" and phone image */
 .welcome-section {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 30px;
 }
 
 .welcome-text {
     font-family: 'Feeling Passionate', cursive;
-    font-size: 95px;
+    font-size: 65px;
     text-align: left;
     margin: 0;
 }
 
 .phone-image {
-    top: 5%;
-    max-width: 200px;
+    position: absolute;
+    right: 5%;
+    top: 260%;
+    transform: translateY(-50%);
+    max-width: 20%;
+    /* Adjust the width as necessary */
     height: auto;
-    margin-left: 50%;
-    /* margin-top: 15%; */
+    z-index: 1;
 }
 
 .welcome-image {
     max-width: 30%;
     height: auto;
-    /* margin-left: 5%; */
-    margin-top: -40%;
+    margin-left: -2.5%;
 }
 
 .below-content {
+    margin-left: -2%;
+
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -121,7 +126,8 @@ nav ul li a:hover {
 
 .below-content img {
     /* margin-left: 3%; */
-    max-width: 30%;
+    margin-top: 1%;
+    max-width: 20%;
     height: auto;
     display: inline-block;
     vertical-align: middle;
@@ -134,9 +140,7 @@ nav ul li a:hover {
     color: white;
     margin-top: 20px;
     text-align: center;
-    max-width: 60%;
-    /* This sets the maximum width */
-    width: 100%;
+    max-width: 40%;
     margin-left: 5%;
 }
 
