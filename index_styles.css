@@ -116,33 +116,34 @@ nav ul li a:hover {
 
 .below-content {
     margin-left: -2%;
-
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding-left: 12.5%;
+    padding-left: 7.5%;
     margin-top: 10%;
     /* Adjust spacing between elements */
 }
 
 .below-content img {
-    /* margin-left: 3%; */
     margin-top: 1%;
-    max-width: 20%;
     height: auto;
     display: inline-block;
     vertical-align: middle;
 }
 
-.faz3a-description-extra {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    margin-top: 20px;
-    text-align: center;
-    max-width: 40%;
-    margin-left: 5%;
+.founders-image {
+    max-width: 30%;
+    /* Adjust size as necessary */
+    height: auto;
+    margin-left: 27%;
+    display: inline-block;
+}
+
+
+
+
+.main-faz3a-image {
+    max-width: 20%;
 }
 
 
@@ -197,12 +198,6 @@ footer {
     color: white;
 }
 
-/* .welcome-image {
-    max-width: 30%;
-    height: auto;
-    margin-top: -25px;
-    margin-left: -25px;
-} */
 
 .faz3a-description {
     font-family: 'League Spartan', sans-serif;
@@ -236,10 +231,28 @@ footer {
     z-index: 10;
 }
 
-.founders-image {
-    max-width: 150%;
-    /* Adjust size as necessary */
-    height: auto;
-    margin-left: 30%;
-    display: inline-block;
+
+
+.extra-information {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.welcome-message {
+    text-align: left;
+    padding-left: 29%;
+    padding-right: 4%;
+    /* Pushes the content to the right while keeping the full width */
+    width: 100%;
+}
+
+
+.faz3a-description-extra {
+    text-align: center;
+    max-width: 30%;
+    margin-left: 4%;
 }
