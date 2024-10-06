@@ -88,6 +88,16 @@ nav ul li a:hover {
     max-width: 30%;
 }
 
-.events-title{
-    
+.top-of-the-page {
+    display: inline-flex;
+}
+
+.side-text {
+    margin-top: 15.5%;
+    margin-left: 30%;
+    max-width: 25%;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
 }
