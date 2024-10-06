@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Canva Sans';
+    src: url('CanvaSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tt Chocolates';
+    src: url('path-to-your-tt-chocolates-font-file.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #16152a, #261454);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #3d2272;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* Ensures the navbar is on top */
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+    text-shadow: -1px -1px 0 #3d2272, 1px 1px 0 #3d2272;
+}
+
+nav ul li a.active {
+    color: #5fd3c8;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.user-icon {
+    height: 50px;
+    width: auto;
+    margin-right: 15%;
+}
+
+.events-title {
+    padding-top: 10%;
+    padding-left: 5%;
+    max-width: 30%;
+}
+
+.events-title{
+    
+}
