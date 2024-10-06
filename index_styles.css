@@ -34,7 +34,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100; /* Ensures the navbar is on top */
+    z-index: 100;
+    /* Ensures the navbar is on top */
 }
 
 nav img {
@@ -235,13 +236,10 @@ footer {
     z-index: 10;
 }
 
-.message-from-founders {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #f9447f; /* Ensure this is the correct color */
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Luckiest Guy', Arial, sans-serif;
+.founders-image {
+    max-width: 150%;
+    /* Adjust size as necessary */
+    height: auto;
+    margin-left: 30%;
+    display: inline-block;
 }
