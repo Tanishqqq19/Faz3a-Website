@@ -110,7 +110,7 @@ nav ul li a:hover {
     margin-top: 6%;
     left: 72.5%;
     height: auto;
-    width: 60%;
+    width: 40%;
 }
 
 .information-links {
@@ -139,17 +139,21 @@ nav ul li a:hover {
     position: relative;
     width: 100%;
     height: 2px;
-    /* Adjust the thickness as desired */
     background-color: white;
     margin-top: 20px;
-    /* Space above the line */
+    z-index: 5;
+    border: 1px solid white;
 }
 
+
 .line-below-background {
+    position: absolute;
     display: inline-flex;
     /* Set
     /* Use absolute positioning for more control */
-    width: 33.33%;
+    width: 32.33%;
+    top: 35%;
+    margin-left: 73.5%;
     /* One-third of the page */
     height: 2px;
     /* Adjust thickness as needed */
@@ -163,4 +167,32 @@ nav ul li a:hover {
     /* Optional: border for visibility while testing */
     left: 0;
     /* Aligns it with the left side of the container */
+}
+
+.first-title {
+    position: relative;
+    height: auto;
+    width: 50%;
+}
+
+.football-tag {
+    display: inline-flex;
+    margin-left: 3%;
+}
+
+.text-beside {
+    margin-top: 10%;
+    left: 70%;
+    margin-left: 10%;
+    max-width: 30%;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.padel-tag {
+    display: inline-flex;
+    margin-left: 3%;
+    margin-top: 35%;
 }
