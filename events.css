@@ -89,12 +89,15 @@ nav ul li a:hover {
 }
 
 .top-of-the-page {
+    position: relative;
     display: inline-flex;
 }
 
 .side-text {
+    position: absolute;
     margin-top: 15.5%;
-    margin-left: 30%;
+    left: 70%;
+    /* margin-left: 30%; */
     max-width: 25%;
     font-family: 'Poppins';
     font-size: 25px;
@@ -103,5 +106,61 @@ nav ul li a:hover {
 }
 
 .background-design {
-    margin-top: 5%;
+    position: absolute;
+    margin-top: 6%;
+    left: 72.5%;
+    height: auto;
+    width: 60%;
+}
+
+.information-links {
+    margin-top: 7.5%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.information-links p {
+    position: relative;
+    flex-direction: column;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.line {
+    display: block;
+}
+
+.horizontal-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    /* Adjust the thickness as desired */
+    background-color: white;
+    margin-top: 20px;
+    /* Space above the line */
+}
+
+.line-below-background {
+    display: inline-flex;
+    /* Set
+    /* Use absolute positioning for more control */
+    width: 33.33%;
+    /* One-third of the page */
+    height: 2px;
+    /* Adjust thickness as needed */
+    background-color: white;
+    /* Line color */
+    margin-top: 10px;
+    /* Space between background image and line */
+    z-index: 10;
+    /* Ensure it’s above other elements */
+    border: 1px solid white;
+    /* Optional: border for visibility while testing */
+    left: 0;
+    /* Aligns it with the left side of the container */
 }
