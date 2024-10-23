@@ -260,3 +260,13 @@ footer {
     margin-left: 62%;
     margin-top: -5%;
 }
+
+.black-block {
+    width: 100px;
+    /* Adjust the width of the square */
+    height: 100px;
+    /* Adjust the height of the square */
+    background-color: black;
+    margin: 20px auto;
+    /* Centers the square horizontally */
+}
