@@ -137,11 +137,12 @@ nav ul li a:hover {
     font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 0;
+    margin-top: -75px;
 }
 
 .team-member-title {
     font-size: 22px;
     color: #f8ee8f;
-    margin-top: -70px;
+    margin-top: 20px;
     text-transform: uppercase;
 }
