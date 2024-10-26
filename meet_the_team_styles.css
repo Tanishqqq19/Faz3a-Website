@@ -113,7 +113,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 200px;
+    width: 250px;
 }
 
 .image-container img {
@@ -142,5 +142,6 @@ nav ul li a:hover {
 .team-member-title {
     font-size: 22px;
     color: #f8ee8f;
-    margin-top: 2px;
+    margin-top: -70px;
+    text-transform: uppercase;
 }
