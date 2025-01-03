@@ -194,7 +194,7 @@ nav ul li a:hover {
 .padel-tag {
     display: inline-flex;
     margin-left: 3%;
-    margin-top: 35%;
+    margin-top: 10%;
 }
 
 .plus {
@@ -202,4 +202,12 @@ nav ul li a:hover {
     margin-left: 180%;
     width: 20%;
     height: auto;
+}
+
+.img1 {
+    width: 50%;
+}
+
+.container {
+    display: flex;
 }
